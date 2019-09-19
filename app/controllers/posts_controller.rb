@@ -3,8 +3,7 @@ class PostsController < ApplicationController
       @posts = Post.all
     end
 
-    def received(data)
-      @data = data
+    def received
     end
   
   end

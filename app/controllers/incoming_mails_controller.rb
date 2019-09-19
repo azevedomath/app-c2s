@@ -6,7 +6,7 @@ class IncomingMailsController < ApplicationController
       puts "Receiving email...."
       Rails.logger.debug "Received: #{params[:headers][:subject]} for #{params[:envelope][:to]}"
       
-      redirect_to received_path(params.require(:headers))
+      redirect_to received_path
     end
 
 end
