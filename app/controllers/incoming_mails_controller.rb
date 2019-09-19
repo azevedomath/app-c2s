@@ -1,8 +1,9 @@
 class IncomingMailsController < ApplicationController
-
-    protect_from_forgery with: :null_session
+    
     require 'mail'
 
+    protect_from_forgery with: :null_session
+    skip_before_filter :verify_authenticity_token  
     def create
 
       puts "Receiving emaizzzzl...."
