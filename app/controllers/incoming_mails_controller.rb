@@ -1,9 +1,12 @@
 class IncomingMailsController < ApplicationController
     
-    require 'mail'
+    
 
     protect_from_forgery with: :null_session
-    skip_before_filter :verify_authenticity_token  
+    skip_before_filter :verify_authenticity_token 
+
+
+    require 'mail' 
     def create
 
       puts "Receiving emaizzzzl...."
