@@ -1,3 +1,12 @@
 <h3>
-Envie um e-mail para 69b93505a693953dab0d@cloudmailin.net e ele aparecerá aqui!
+Envie um e-mail para 69b93505a693953dab0d@cloudmailin.net e atualize a página.
 </h3>
+
+
+<h4>
+    <% @posts.each do |p| %>
+        Corpo: <%= p.body %> |  
+        Email: <%= p.email %> 
+        <br><br>
+    <% end %>
+</h4>
